@@ -1,0 +1,69 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Shivam",
+      "last_name": "Pandey",
+      "contact_no": "7011372816",
+      "country_code": "+91",
+      "messages": [
+        {
+          "text": "Hello world",
+          "time": "12:58"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "first_name": "Preeti",
+      "last_name": "Pandey",
+      "contact_no": "9958732410",
+      "country_code": "+91",
+      "messages": [
+        {
+          "text": "Hello world",
+          "time": "12:00"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "first_name": "Sweta",
+      "last_name": "Pandey",
+      "contact_no": "7011372816",
+      "country_code": "+91",
+      "messages": [
+        {
+          "text": "Hello world",
+          "time": "12:58"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "first_name": "Raj Laxmi",
+      "last_name": "Pandey",
+      "contact_no": "9795580324",
+      "country_code": "+91",
+      "messages": [
+        {
+          "text": "Hello world",
+          "time": "12:08"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "first_name": "BM",
+      "last_name": "Pandey",
+      "contact_no": "7011372816",
+      "country_code": "+91",
+      "messages": [
+        {
+          "text": "Hello world",
+          "time": "12:28"
+        }
+      ]
+    }
+  ]
+}
