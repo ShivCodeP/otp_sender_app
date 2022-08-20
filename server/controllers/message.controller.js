@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get("",authenticateDev,async(req,res) => {
     try {
-        const messages = await Messages.find({}).lean().exec();
+        const messages = await Messages.find({}).sort({"createdAt": "desc"}).lean().exec();
         return res.send(messages)
     } catch (error) {
         return res.status(500).send("Internal server error")

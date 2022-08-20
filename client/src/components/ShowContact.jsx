@@ -12,7 +12,7 @@ const Show = () => {
   const contact = "+91" + searchParams.get("contact");
 
   const handleSubmit = () => {
-    fetch("http://localhost:3000/message", {
+    fetch("http://localhost:4000/message", {
       method: "POST",
       body: JSON.stringify({
         message: text,
