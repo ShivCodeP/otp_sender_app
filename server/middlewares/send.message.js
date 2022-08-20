@@ -3,8 +3,8 @@ dotenv.config()
 
 import twilio from "twilio";
 
-const sid =  "AC7a9016141c65b77728aaa3269aa665e9";
-const token =  "d6fb44df1fa3b9bd3d90b9ce6c0046bf";
+const sid =  "";
+const token =  "";
 
 const client = twilio(sid, token);
 
