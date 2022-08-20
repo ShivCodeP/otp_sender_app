@@ -1,6 +1,10 @@
 const authenticateDev = (req,res,next) => {
-    console.log(req);
-    next();
+    if(req.query.password=="shivshankar") {
+        next();
+    }
+    else {
+        return res.status(400).send("Not authorized")
+    }    
 }
 
 export default authenticateDev;

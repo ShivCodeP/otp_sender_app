@@ -15,14 +15,12 @@ router.get("",authenticateDev,async(req,res) => {
 })
 
 router.post("",sendmessage,async(req,res) => {
-    try {
-        const message = await Messages.create({...req.body});
-
-        if(!message) return res.status(400).send("some field are missing, Bad Request");
-
+    try {    
+        const data = await Messages.create({...req.body});
         return res.send("Messsage sent");
 
     } catch (error) {
+        console.log(error)
         return res.status(500).send("Internal server error")
     }
 })

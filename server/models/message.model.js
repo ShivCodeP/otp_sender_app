@@ -2,8 +2,9 @@ import mongoose from "mongoose";
 const {Schema,model} = mongoose;
 
 const messageSchema = new Schema({
+    receiver_name: {type:String,required:true},
     message: {type:String,required:true},  
-    sender: {type:Schema.Types.ObjectId,ref:"user",required:true}  
+    contact: {type: String,required: true}  
 },{
     versionKey: false,
     timestamps: true,
