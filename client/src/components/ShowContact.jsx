@@ -1,7 +1,8 @@
 import React from "react";
-import { useSearchParams,Navigate } from "react-router-dom";
+import { useSearchParams,useNavigate } from "react-router-dom";
 
 const Show = () => {
+  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const val = Math.floor(100000 + Math.random() * 900000);
 
@@ -23,8 +24,8 @@ const Show = () => {
         "content-type": "application/json"
       }
     })
-      .then((res) => <Navigate to="/success" replace={true}/>)
-      .catch((err) => <Navigate to="/error" replace={true}/>);
+      .then((res) =>  navigate("/success", replace={true}))
+      .catch((err) =>navigate("/error", replace={true}) );
   };
 
   return (
