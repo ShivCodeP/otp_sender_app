@@ -23,8 +23,8 @@ const Show = () => {
         "content-type": "application/json"
       }
     })
-      .then((res) => <Navigate to="/success" />)
-      .catch((err) => <Navigate to="/error" />);
+      .then((res) => <Navigate to="/success" replace={true}/>)
+      .catch((err) => <Navigate to="/error" replace={true}/>);
   };
 
   return (
