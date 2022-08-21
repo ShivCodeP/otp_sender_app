@@ -3,7 +3,7 @@ import React from "react";
 const ErrorC = () => {
     return (
         <div>
-            <img src="" alt="Error.." />
+            <h1>Something went wrong please try again</h1>
         </div>
     )
 }
