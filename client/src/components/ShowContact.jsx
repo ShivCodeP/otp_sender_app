@@ -1,5 +1,5 @@
 import React from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams,Navigate } from "react-router-dom";
 
 const Show = () => {
   const [searchParams] = useSearchParams();
@@ -23,19 +23,17 @@ const Show = () => {
         "content-type": "application/json"
       }
     })
-      .then((res) => console.log("message posted"))
-      .catch((err) => console.log(err));
+      .then((res) => <Navigate to="/success" />)
+      .catch((err) => <Navigate to="/error" />);
   };
 
   return (
-    <div>
+    <div style={{border: "1px solid gray", width: "500px", height: "200px", margin: "auto", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "5px", flexDirection: "column" }}>
       <div>
-        <strong>Name:</strong> <p>{name}</p>
+        <p><strong>Name: </strong>{name}</p>
+        <p><strong>Contact no: </strong>{contact}</p>
       </div>
-      <div>
-        <strong>Contact no:</strong> <p>{contact}</p>
-      </div>
-      <p>{text}</p>
+      <p><strong>Message: </strong>{text}</p>
       <button onClick={handleSubmit}>Send Message</button>
     </div>
   );

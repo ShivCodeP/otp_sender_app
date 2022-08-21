@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const List = ({ contacts }) => {
   return (
-    <div style={{marginTop:"5%"}}>
+    <div>
       {contacts.users.map((e) => (
         <div key={e.id} style={{border:"2px solid gray",width:"300px",height:"60px",margin:"auto",display:"flex",alignItems:"center",justifyContent:"center",borderRadius:"2px",gap:"10px"}}>
           <Link style={{textDecoration:"none"}}
