@@ -3,7 +3,7 @@ import React from "react";
 const Success = () => {
     return (
         <div>
-            <img src="" alt="congrats.." />
+            <h1>Message successfully sent</h1>
         </div>
     )
 }
