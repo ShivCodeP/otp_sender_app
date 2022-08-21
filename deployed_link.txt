@@ -1,0 +1,2 @@
+deployed_link:- otp-sender-app.vercel.app/
+github_repo_link:- https://github.com/ShivCodeP/otp_sender_app
